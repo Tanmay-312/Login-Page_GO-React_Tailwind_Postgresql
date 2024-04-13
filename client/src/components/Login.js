@@ -6,14 +6,16 @@ import '../styles.css';
 const Login = () => {
     const [username, setUsername] = useState('');
     const [password, setPassword] = useState('');
+    const [message, setMessage] = useState('');
+    const [error, setError] = useState('');
     
     const handleSubmit = async (e) => {
         e.preventDefault();
         try {
             await axios.post('http://localhost:8080/login', { username, password });
-            console.log('Login successful');
+            setMessage('Login successful');
         } catch (error) {
-            console.error('Login failed:', error);
+            setError('Login failed');
         }
     };
     
@@ -21,6 +23,8 @@ const Login = () => {
         <div className="form-container">
             <div className="form-box">
                 <h2 className="form-heading">Login</h2>
+                {message && <div className="success-message">{message}</div>}
+                {error && <div className="error-message">{error}</div>}
                 <form onSubmit={handleSubmit} className="space-y-4">
                     <div>
                         <label htmlFor="username" className="username-label">Username</label>
