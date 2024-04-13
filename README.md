@@ -59,9 +59,6 @@ go run main.go
 
 - Register a new user: Access the registration page and provide username and password.
 - Login: Access the login page and provide username and password to authenticate.
-- Create a new post: Access the post creation page and provide the necessary details.
-- Update a post: Access the post edit page and modify the existing post details.
-- Delete a post: Access the post details page and delete the specific post.
 
 ## Contributing
 
