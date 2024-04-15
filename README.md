@@ -23,7 +23,7 @@ Welcome to our full-stack application, featuring a GoLang backend server for use
 1. Clone the backend repository:
 
 ```bash
-git clone <https://github.com/Tanmay-312/Login-Page_GO-React_Tailwind_Postgresql.git>
+git clone https://github.com/Tanmay-312/Login-Page_GO-React_Tailwind_Postgresql.git
 ```
 
 2. Install dependencies, both commands in 2 different terminals, one of client folder, other of server folder:
